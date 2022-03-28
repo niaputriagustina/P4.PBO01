@@ -2,11 +2,13 @@ public class G_TestStatic {
 
     //Static Method
     static void myStaticMethod () {
+
         System.out.println("Static Methods Can Be Called Without Creating Objects");
     }
 
     //Public Method
     public void myPublicMethod () {
+
         System.out.println("Public Mehtods Must Be Called By Creating Objects");
     }
 
