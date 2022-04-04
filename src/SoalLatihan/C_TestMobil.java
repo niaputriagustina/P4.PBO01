@@ -32,7 +32,7 @@ class Mobil {
     }
 }
 
-public class D_TestMobil {
+public class C_TestMobil {
     public static void main(String[] args) {
 
         //Membuat Objek
