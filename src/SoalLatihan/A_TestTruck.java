@@ -28,8 +28,22 @@ class Truck {
         this.muatanMaks = muatanMaks;
     }
 
+    //Ditambah Kondisi If
     public void tambahMuatan (double berat) {
-        this.muatan = muatan+berat;
+        double total;
+        total = this.muatan = muatan + berat;
+
+        if (total > muatanMaks) {
+            System.out.println("Muatan Tidak Bisa Ditambah Lagi!");
+            total = this.muatan = muatan - berat;
+        }
+    }
+
+    //Ditambah Method Konversi Kg Ke Newton
+    public void kgToNewton () {
+        double total;
+        total = this.muatan = muatan * 9.8;
+        System.out.println(total);
     }
 }
 
@@ -51,5 +65,7 @@ public class A_TestTruck {
         truk.tambahMuatan(150.0);
         System.out.println("Tambah Muatan : 150");
         System.out.println("Muatan Sekarang = " + truk.getMuatan());
+        System.out.println("Muatan Dikonversi Ke Newton");
+        truk.kgToNewton();
     }
 }
